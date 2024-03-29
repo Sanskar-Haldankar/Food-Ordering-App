@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cornsilk"
+    android:backgroundTintMode="src_atop"
+    android:orientation="vertical"
+    tools:context=".Models.address">
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/newbg"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress"
+            android:layout_width="286dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_textbg2"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="Ender your Address"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="21dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="289dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/edit_textbg2"
+            android:paddingLeft="21dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:text="Select Payment method"
+
+            android:textColor="#2B2B2B"
+            android:textSize="17sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="50dp">
+
+            <RadioButton
+                android:id="@+id/onlinepay"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Paytm,Gpay" />
+
+            <RadioButton
+                android:id="@+id/credit"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Credit card" />
+
+            <RadioButton
+                android:id="@+id/debit"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Debit card" />
+
+            <RadioButton
+                android:id="@+id/cod"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:text="Cash in dlivery" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/confirmpayment"
+            android:layout_width="187dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center_horizontal"
+            android:includeFontPadding="true"
+            android:paddingTop="10dp"
+            android:text="Confirm Order"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStartedActivity"
+    android:background="@drawable/bg">
+
+
+    <ImageView
+        android:id="@+id/getstarted"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/newlogodv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/foodforeveryone"
+        android:layout_width="245dp"
+        android:layout_height="131dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Food For Everyone"
+        android:textColor="#430505"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getstarted"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/getstartedbtntxt"
+        android:layout_width="238dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/btn_background"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="Get Started"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
